@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // chapter3
+        // question1
+        // Declare a variable called age & assign to it your age. Show
+        // your age in an alert box.
+        var age = 21;
+        alert("I am " + " " + age + " " + "years old");
+
+        // question2
+        // Declare & initialize a variable to keep track of how many
+        // times a visitor has visited a web page. Show his/her
+        // number of visits on your web page. For example: “You
+        // have visited this site N times”.
+        var n = 14;
+        document.write("you have visited..." + n + "times");
+        document.write("<br>");
+
+
+        // question3
+        // Declare a variable called birthYear & assign to it your
+        // birth year. Show the following message in your browser:
+        var birthYear = 2002;
+        document.write("My birth year is" + " " + birthYear + " <br> datatypes of my declared variableis number");
+        document.write("<br>");
+
+        // question4
+        // A visitor visits an online clothing store
+        // www.xyzClothing.com.Write a script to store in variables
+        // the following information:
+        // a.Visitor’s name
+        // b.Product title
+        // c.Quantity i.e.how many products a visitor wants to
+        // order
+        // Show the following message in your browser: “John
+        // Doe ordered 5 T - shirt(s) on XYZ Clothing store”.
+        var visitorName = "John Doe"
+        var productTitle = "amazon"
+        var quantity = 5;
+        document.write(visitorName + " " + "Ordered" + " " + quantity + " " + "T-shirts(s) on" + " " + productTitle + " " + "store");
+        document.write("<br>");
+
+
+        // chapter4
+        // question1
+        // Declare 3 variables in one statement.
+        var a = 10;
+        var b = 20;
+        var c = 30
+
+        // question2
+        // Declare 5 legal & 5 illegal variable names.
+
+        // legsl names
+        var firstName = "raza";
+        var first_Name = "raza";
+        var first$name = "raza";
+        var firstName12 = "raza";
+        var $first6Name = "raza";
+
+        // illegal names 
+        // var 1userName = "ainy";
+        // var -username = "ainy";
+        // var user name = "ainy";
+        // var #username = "ainy";
+        // var /username = "ainy";
+
+        // question3
+        // Display this in your browser
+        document.write("A heading stating “Rules for naming JS variables”");
+        document.write("<br>");
+        document.write("Variable names can only contain  and For example: $my_1stVariable");
+        document.write("<br>");
+        document.write("Variables must begin with a or For example $name, _name or name");
+        document.write("<br>");
+        document.write("Variable names are case");
+        document.write("<br>");
+        document.write("Variable names should not be JS");
+        document.write("<br>");
+
+
+        // chapter5
+        // question1
+        // Write a program that take two numbers & add them in a
+        // new variable. Show the result in your browser.
+        var num1 = 3;
+        var num2 = 5;
+        var sum = num1 + num2;
+        document.write("sum of 3 and 5 is" + " " + sum);
+        document.write("<br>");
+
+        // question2
+        // Repeat task1 for subtraction, multiplication, division &
+        // modulus. 
+        var num1 = 3;
+        var num2 = 5;
+        var sum = num1 - num2;
+        document.write("subtraction  of 3 and 5 is" + " " + sum);
+        document.write("<br>");
+
+        var num1 = 3;
+        var num2 = 5;
+        var sum = num1 * num2;
+        document.write("multiplication of 3 and 5 is" + " " + sum);
+        document.write("<br>");
+
+        var num1 = 3;
+        var num2 = 5;
+        var sum = num1 / num2;
+        document.write("division of 3 and 5 is" + " " + sum);
+        document.write("<br>");
+
+
+        // question3
+        // Do the following using JS Mathematic Expressions
+        var x;
+        x = 5;
+
+        document.write("Value after variable declaration is:" + " " + x);
+        document.write("<br>");
+        document.write("Initial value:" + " " + x);
+        document.write("<br>");
+        x++;
+        document.write("Value after increment is:" + " " + x);
+        document.write("<br>");
+        x += 7;
+        document.write("value after addition is:" + "" + x);
+        document.write("<br>");
+        x--;
+        document.write("Value after decrement is:" + "" + x);
+        document.write("<br>");
+        document.write("The remainder is:" + " " + x / 3);
+        document.write("<br>");
+
+
+        // question4
+        // Cost of one movie ticket is 600 PKR. Write a script to
+        // store
+        // ticket price in a variable & calculate the cost of buying 5
+        // tickets
+        // to a movie. Example output:
+
+        var ticketPrice = 600;
+        document.write("Total cost to buy 5 tickets to a movie is " + " " + ticketPrice * 5 + "PKR");
+        document.write("<br>");
+
+        // question5
+        // Write a script to display multiplication table of any
+        // number in your browser.
+        // Generate and display the table of 3
+        for (let i = 1; i <= 10; i++) {
+            let result = 3 * i;
+            console.log(`3 * ${i} = ${result}`);
+        }
+
+
+        // question6
+        //  The Temperature Converter: It’s hot out! Let’s make a
+        //   converter based on the steps here.
+        //   a. Store a Celsius temperature into a variable.
+        //   b. Convert it to Fahrenheit & output “NNoC is NNoF”.
+        //   c. Now store a Fahrenheit temperature into a variable.
+        //   d. Convert it to Celsius & output “NNoF is NNoC”.
+
+
+        // Function to convert Celsius to Fahrenheit
+        function celsiusToFahrenheit(celsius) {
+            return (celsius * 9 / 5) + 32;
+        }
+
+        // Function to convert Fahrenheit to Celsius
+        function fahrenheitToCelsius(fahrenheit) {
+            return (fahrenheit - 32) * 5 / 9;
+        }
+
+        // Step a: Store a Celsius temperature into a variable
+        let celsiusTemp = 25;
+
+        // Step b: Convert Celsius to Fahrenheit & output
+        let fahrenheitTemp = celsiusToFahrenheit(celsiusTemp);
+        console.log(`${celsiusTemp}°C is ${fahrenheitTemp.toFixed(2)}°F`);
+
+        // Step c: Store a Fahrenheit temperature into a variable
+        let fahrenheitTemp2 = 77;
+
+        // Step d: Convert Fahrenheit to Celsius & output
+        let celsiusTemp2 = fahrenheitToCelsius(fahrenheitTemp2);
+        console.log(`${fahrenheitTemp2}°F is ${celsiusTemp2.toFixed(2)}°C`);
+
+
+        // question7
+        //  Write a program to implement checkout process of a
+        // shopping cart system for an e-commerce website. Store
+        // the following in variables
+        // a. Price of item 1
+        // b. Price of item 2
+        // c. Ordered quantity of item 1
+        // d. Ordered Quantity of item 2
+        // e. Shipping charges
+
+        //  Compute the total cost & show the receipt in your browser.
+
+
+
+
+
+
+        // Store prices and quantities of items
+        let priceItem1 = 25;
+        let priceItem2 = 35;
+        let quantityItem1 = 2;
+        let quantityItem2 = 1;
+
+        // Shipping charges
+        let shippingCharges = 10;
+
+        // Calculate total cost
+        let totalCost = (priceItem1 * quantityItem1) + (priceItem2 * quantityItem2) + shippingCharges;
+
+        // Display receipt in the browser
+        document.write("<h2>Receipt</h2>");
+        document.write("<p>Price of Item 1: $" + priceItem1.toFixed(2) + "</p>");
+        document.write("<p>Ordered Quantity of Item 1: " + quantityItem1 + "</p>");
+        document.write("<p>Price of Item 2: $" + priceItem2.toFixed(2) + "</p>");
+        document.write("<p>Ordered Quantity of Item 2: " + quantityItem2 + "</p>");
+        document.write("<p>Shipping Charges: $" + shippingCharges.toFixed(2) + "</p>");
+        document.write("<h3>Total Cost: $" + totalCost.toFixed(2) + "</h3>");
+        document.write("<br>");
+
+
+
+        // question8
+        // Store total marks & marks obtained by a student in 2
+        // variables. Compute the percentage & show the result in
+        // your browser
+        // Store total marks and marks obtained
+        let totalMarks = 500;
+        let marksObtained = 425;
+
+        // Compute percentage
+        let percentage = (marksObtained / totalMarks) * 100;
+
+        // Display the result in the browser
+        document.write("<h2>Result</h2>");
+        document.write("<p>Total Marks: " + totalMarks + "</p>");
+        document.write("<p>Marks Obtained: " + marksObtained + "</p>");
+        document.write("<p>Percentage: " + percentage.toFixed(2) + "%</p>");
+
+        document.write("<br>");
+
+
+        // question9
+        // Assume we have 10 US dollars & 25 Saudi Riyals. Write a
+        // script to convert the total currency to Pakistani Rupees.
+        // Perform all calculations in a single expression.
+        // (Exchange rates : 1 US Dollar = 104.80 Pakistani Rupee
+        // and 1 Saudi Riyal = 28 Pakistani Rupee)
+
+        // Define the amount in US dollars and Saudi Riyals
+        let usDollars = 10;
+        let saudiRiyals = 25;
+
+        // Define exchange rates
+        let exchangeRateUSD = 104.80;
+        let exchangeRateSAR = 28;
+
+        // Perform conversion in a single expression
+        let totalInPakistaniRupees = (usDollars * exchangeRateUSD) + (saudiRiyals * exchangeRateSAR);
+
+        // Display the result
+        document.write("Total amount in Pakistani Rupees: " + totalInPakistaniRupees.toFixed(2));
+        document.write("<br>");
+        //    question10
+        // Write a program to initialize a variable with some
+        // number and do arithmetic in following sequence:
+        // a. Add 5
+        // b. Multiply by 10
+        // c. Divide the result by 2
+        // Perform all calculations in a single expression
+
+
+        // Initialize a variable with some number
+        let number = 10;
+
+        // Perform arithmetic operations in a single expression
+        let result = ((number + 5) * 10) / 2;
+
+        // Display the result
+        document.write("program result:", result);
+        document.write("<br>");
+
+
+        // question12
+        // Store the radius of the circle
+        let radius = 5; // For example, let's assume the radius is 5
+
+        // Calculate the circumference
+        let circumference = 2 * Math.PI * radius;
+
+        // Calculate the area
+        let area = Math.PI * radius ** 2;
+
+        // Calculate the diameter
+        let diameter = 2 * radius;
+
+        // Output the results
+        console.log("The circumference is " + circumference.toFixed(2));
+        console.log("The area is " + area.toFixed(2));
+        console.log("The diameter is " + diameter.toFixed(2));
+
+
+
+        // question13
+        // Store your favorite snack into a variable
+        let favoriteSnack = "chocolate";
+
+        // Store your current age into a variable
+        let currentAge = 25;
+
+        // Store a maximum age into a variable
+        let maxAge = 80;
+
+        // Store an estimated amount per day (as a number)
+        let snacksPerDay = 2;
+
+        // Calculate remaining years
+        let remainingYears = maxAge - currentAge;
+
+        // Calculate total snacks needed
+        let totalSnacksNeeded = remainingYears * 365 * snacksPerDay;
+
+        // Output the result
+        console.log(`You will need ${totalSnacksNeeded} ${favoriteSnack}s to last you until the ripe old age of ${maxAge}.`);
+
+        // Console log each variable for clarity
+        console.log("Favorite Snack:", favoriteSnack);
+        console.log("Current Age:", currentAge);
+        console.log("Maximum Age:", maxAge);
+        console.log("Snacks Per Day:", snacksPerDay);
+
+
+        // question11
+        // Store the current year in a variable
+        let currentYear = new Date().getFullYear();
+
+        // Store their birth year in a variable
+        let birth2Year = 1990; // Assuming the birth year is 1990
+
+        // Calculate their two possible ages
+        let age1 = currentYear - birthYear;
+        let age2 = age1 - 1;
+
+        // Output the result to the screen
+        console.log(`They are either ${age1} or ${age2} years old.`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
